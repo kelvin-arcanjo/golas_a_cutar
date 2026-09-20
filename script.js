@@ -177,7 +177,7 @@ const COLORS = [
     });
     const total = cart.reduce((s,i) => s + i.price * i.qty, 0);
     msg += `%0ATotal: ${fmt(total)}`;
-    window.open(`https://wa.me/244943567154?text=${msg}`, '_blank');
+    window.open(`https://wa.me/244973519805?text=${msg}`, '_blank');
   });
 
   renderColorGrid();
