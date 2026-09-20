@@ -237,6 +237,15 @@
   .price-chip b{ display:block; font-size: 20px; margin-top:4px; }
   .price-chip span{ color: var(--fg-muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
 
+.gallery-item {
+    transition-duration: 0.5s;
+}  
+
+.gallery-item:hover {
+    border: 3px solid #fff;
+    transform: translateY(-2px);
+}  
+
   /* ---------- CONFIGURATOR ---------- */
   .configurator{
     display:grid;
@@ -244,6 +253,26 @@
     gap: 26px;
     padding: 26px;
   }
+
+  @media (max-width: 768px) {
+  .header-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand {
+    align-items: center; /* Centraliza a logo e o slogan na horizontal */
+    width: 100%;
+  }
+
+  .brand .logo-img {
+    margin: 0 auto;       /* Garante a centralização da imagem */
+  }
+
+  .brand .slogan {
+    text-align: center;   /* Centraliza o texto do slogan */
+  }
+}
   @media (max-width: 720px){
     .configurator{ grid-template-columns: 1fr; }
   }
